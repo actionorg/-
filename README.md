@@ -2,7 +2,7 @@
 如何引用SDK
 ---
 ```
-npm install action-sdk git@
+npm install action-sdk git+ssh://github.com:actionorg/js-action-sdk.git
 ```
 ```javascript
 var StellarSdk = require('action-sdk'); 
