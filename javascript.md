@@ -78,12 +78,12 @@ server.loadAccount(destinationId)
   });
 ```
 ## 账户余额信息
-
+以下例子为获取账号AAYPSO6Y3OOZWQOT5F4F5LYT3G4BUPX2VOYAPVFW7F65TWVH2UPZJZQC的余额信息
 ##
 ```javascript
 var server = new StellarSdk.Server('https://api.action.bi');
-var i = 'AAYPSO6Y3OOZWQOT5F4F5LYT3G4BUPX2VOYAPVFW7F65TWVH2UPZJZQC';
-server.loadAccount().then(function(account) {
+var accountId = 'AAYPSO6Y3OOZWQOT5F4F5LYT3G4BUPX2VOYAPVFW7F65TWVH2UPZJZQC';
+server.loadAccount(accountId).then(function(account) {
   console.log('Balances for account: ' + pair.publicKey());
   account.balances.forEach(function(balance) {
     console.log('Type:', balance.asset_type, ', Balance:', balance.balance);
