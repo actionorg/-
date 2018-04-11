@@ -2,6 +2,7 @@
 如何引用SDK
 ---
 ```
+npm init
 npm install action-sdk git+ssh://github.com:actionorg/js-action-sdk.git
 ```
 ```javascript
